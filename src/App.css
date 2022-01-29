@@ -1,38 +1,153 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: "Apercu";
+  src: url("assets/fonts/ApercuMonoProBold.ttf") format("truetype"); /* Safari, Android, iOS */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: #fefefe;
+  margin: 0;
+  height: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header_container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  text-align: center;
+  font-family: "Apercu";
+  margin: 40px 0px;
+  font-size: 21px;
+}
+
+.landingImg1 {
+  background-image: url("assets/images/blacksweater.jpeg");
+}
+.landingImg2 {
+  background-image: url("assets/images/white-pants.jpeg");
+}
+.landingImg {
+  background-size: contain;
+  width: 100%;
+  height: 70vh;
+  border-radius: 5px;
+  background-size: cover;
+  background-position: center;
+}
+
+.slick-slide > div {
+  margin: 2.5vh 20px;
+}
+.slick-slide.slick-active > div {
+  margin: 0;
+}
+.slick-slide .landingImg {
+  height: 60vh;
+  /* margin-top: 5vh; */
+}
+
+.slick-slide.slick-active .landingImg {
+  height: 65vh;
+  margin: 0;
+}
+
+.backArrow {
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  color: #9e9e9e;
+  top: 10px;
+}
+
+.button {
+  width: 250px;
+  height: 60px;
+  border-radius: 5px;
+  margin: auto;
+  text-align: center;
+  line-height: 60px;
   color: white;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: "Apercu";
+  position: relative;
+  cursor: pointer;
+}
+.button > svg {
+  position: absolute;
+  right: 30px;
+  width: 20px;
+  height: 20px;
+  top: 17px;
+}
+.mt-10 {
+  margin-top: 10px;
+}
+.backArrow > svg {
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  color: #9e9e9e;
+  cursor: pointer;
+  left: 20px;
+  top: 20px;
+}
+.signInBackGround {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: #faefef;
+  top: 0;
+  z-index: -1;
+}
+.signInInputContainer {
+  width: 250px;
+  height: 60px;
+  border-radius: 10px;
+  margin-top: 5px;
+  font-size: 15px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-left: 10px;
+  font-family: "Apercu";
+  display: flex;
+  margin: 10px auto;
+  background: white;
 }
 
-.App-link {
-  color: #61dafb;
+input {
+  border: none;
+  outline: 0;
+  font-family: "Apercu";
+  color: #757575;
+  font-size: 15px;
+}
+.forgot {
+  color: #b0adbb;
+  line-height: 60px;
+  cursor: pointer;
+  width: 80px;
+}
+.password {
+  width: 160px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.signInContainer {
+  margin-top: 20vh;
+}
+
+/* .signInInputContainer {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+} */
+
+.socialMediaSignInContainer {
+  margin-top: 40px;
+}
+.validateResult {
+  width: 250px;
+  margin: auto;
+  color: red;
+  font-family: "Apercu";
+  height: 40px;
 }
