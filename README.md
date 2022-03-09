@@ -2,6 +2,13 @@
 
 This is a project showcasing a demo landing and login page of an e-commerce app using React on mobile devices.
 
+# Demo
+
+
+https://user-images.githubusercontent.com/56396423/157555021-fd3f9572-3047-4d80-b0cc-eb9224ab39b7.mov
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
